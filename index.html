@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+    
+<div id="header">
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Current Learning</a></li>
+                <li><a href="#">Goals for 2025</a></li>
+                <li><a href="#">New Year Resolutions</a></li>
+            </ul>
+        </nav>
+        <h2>
+            I am
+            <span style="--i:0" data-text="Suryanshu Saxena.">Suryanshu Saxena.</span>
+            <span style="--i:1" data-text="Programmer.">Programmer.</span>
+            <span style="--i:2" data-text="Designer.">Designer.</span>
+            <span style="--i:3" data-text="Creative.">Creative.</span>
+        </h2>
+        <div class="header-text">
+            <p></p>
+        </div>
+    </div>
+</div>
+
+
+<!------------about-------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="sury2.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1></h1>
+                <div class="container1">
+                    <div class="box">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <div class="content">
+                            <div>
+                                <h2>Hello!</h2>
+                                <p>I am Suryanshu Saxena. 
+                                    Currently pursuing B.Tech in Electronics and Communication Engineering, I thrive in problem-solving environments and enjoy bringing ideas to life. 
+                                    As a startup enthusiast, I have been actively participating in competitions, learning, growing, and achieving milestones along the way. 
+                                    Beyond academics and work, I enjoy collaborating with like-minded individuals, creating impactful solutions, and constantly exploring new ways to learn and innovate.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<h1>Current Learnings</h1>
+
+<div class="container2">
+    <div class="box2">
+        <div class="icon">
+            <span>01</span>
+        </div>
+        <div class="content2">
+            <h3>React Native</h3>
+            <p>Building apps for Android and iOS with one codebase. Simplifying development and enhancing efficiency.</p>
+        </div>
+    </div>
+    <div class="box2">
+        <div class="icon">
+            <span>02</span>
+        </div>
+        <div class="content2">
+            <h3>Figma</h3>
+            <p>Designing and prototyping with ease. Collaborative and perfect for bringing ideas to life.</p>
+        </div>
+    </div>
+    <div class="box2">
+        <div class="icon">
+            <span>03</span>
+        </div>
+        <div class="content2">
+            <h3>Advanced CSS</h3>
+            <p>Creating stunning, responsive designs with animations and creative layouts.</p>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+
+</div>
+<!-- Goals for 2025 -->
+<div id="goals">
+    <h1 class="rotating-animation">Goals For 2025</h1>
+</div>
+</div>
+<div class="container4">
+    <ul>
+      <li style="--i:6;">
+        <a href="#">Improve focus and productivity</a>
+      </li>
+      <li style="--i:5;">
+        <a href="#">Achieve fitness goals</a>
+      </li>
+      <li style="--i:4;">
+        <a href="#">Read 20+ books on self-growth</a>
+      </li>
+      <li style="--i:3;">
+        <a href="#">Build meaningful relationships</a>
+      </li>
+      <li style="--i:2;">
+        <a href="#">Adopt a healthier lifestyle</a>
+      </li>
+      <li style="--i:1;">
+        <a href="#">Participate in hackathons</a>
+      </li>
+    </ul>
+  </div>
+  <section>
+    <img src="1.png" data-speed="5" class="layer">
+    <img src="2.png" data-speed="11" class="layer">
+    <img src="3.png" data-speed="2" class="layer">
+    <img src="4.png" data-speed="6" class="layer">
+    <img src="5.png" data-speed="-7" class="layer">
+    <img src="6.png" data-speed="5" class="layer">
+    <img src="7.png" data-speed="1" class="layer">
+    <img src="8.png" data-speed="9" class="layer">
+    <img src="9.png" data-speed="6" class="layer">
+    <img src="10.png" data-speed="7" class="layer">
+    <img src="11.png" data-speed="-5" class="layer">
+    <img src="12.png" data-speed="-1" class="layer">
+    <h2 class="layer" data-speed="2">New Year Resolutions</h2>
+    <h6 class="layer" data-speed="2">(Shake your mouse)</h6>
+    
+  </section>
+  <script type="text/javascript">
+    document.addEventListener("mousemove" , parallax);
+    function parallax(e){
+        this.querySelectorAll('.layer').forEach(layer =>{
+            const speed=layer.getAttribute('data-speed')
+            const x=(window.innerWidth - e.pageX*speed)/100
+            const y=(window.innerHeight - e.pageY*speed)/100
+
+            layer.style.transform = `translateX(${x}px) translateY(${y}px)`
+        })
+    }
+  </script>
+
+    </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<div class="container5">
+    <div class="box">
+      <span></span>
+      <div class="content">
+        <h2>Be Consistent</h2>
+        <p>I will focus on steady progress rather than big, short-lived efforts.</p>
+        
+      </div>
+    </div>
+    <div class="box">
+      <span></span>
+      <div class="content">
+        <h2> Eat Healthy</h2>
+        <p>I will incorporate more fruits and vegetables into my meals.</p>
+     
+      </div>
+    </div>
+    <div class="box">
+      <span></span>
+      <div class="content">
+        <h2>Save Money</h2>
+        <p>I will create a budget and stick to it for better financial management.</p>
+      
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <div id="boi">
+    <h1 class="rotating-animation">My Photo Edits</h1>
+</div>
+  <div class="gallery-wrap">
+    <img src="back.png" id="backBtn">
+    <div class="gallery">
+        <div>
+            <span><img src="mrbeasttypethumbnail.jpg"></span>
+            <span><img src="suryshoeedit.jpg"></span>
+            <span><img src="cliff.jpg"></span>
+        </div>
+        <div>
+            <span><img src="tigeranddeerfailed.jpg"></span>
+            <span><img src="waterfallman.jpg"></span>
+            <span><img src="ishowspeed2.jpg"></span>
+        </div>
+    </div>
+    <img src="next.png" id="nextBtn">
+</div>
+<script>
+    let scrollContainer = document.querySelector(".gallery");
+    let backBtn = document.getElementById("backBtn");
+    let nextBtn = document.getElementById("nextBtn");
+
+    scrollContainer.addEventListener("wheel", (evt) => {
+        evt.preventDefault();
+        scrollContainer.scrollLeft += evt.deltaY;
+        scrollContainer.style.scrollBehavior = "auto";
+    });
+
+    nextBtn.addEventListener("click", ()=>{
+        scrollContainer.style.scrollBehavior = "smooth";
+        scrollContainer.scrollLeft += 900;
+    });
+
+    backBtn.addEventListener("click", ()=>{
+        scrollContainer.style.scrollBehavior = "smooth";
+        scrollContainer.scrollLeft -= 900;
+    });
+</script>
+
+</body>
+</html>
